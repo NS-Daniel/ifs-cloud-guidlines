@@ -101,7 +101,7 @@ FROM customer_order_tab
 WHERE order_no = order_no_
   AND customer_id = customer_id_;
 
--- ŹLE (SQL injection!):
+-- BAD (SQL injection!):
 -- EXECUTE IMMEDIATE 'SELECT * FROM table WHERE id = ' || user_input;
 
 -- Używaj EXISTS zamiast COUNT gdy sprawdzasz istnienie
@@ -110,7 +110,7 @@ IF EXISTS (SELECT 1 FROM customer_order_tab WHERE order_id = order_id_) THEN
    -- ...
 END IF;
 
--- ŹLE:
+-- BAD:
 -- IF (SELECT COUNT(*) FROM customer_order_tab WHERE order_id = order_id_) > 0 THEN
 ```
 
@@ -348,8 +348,8 @@ SELECT * FROM customer_order_tab
 WHERE order_no = :order_no  -- DOBRZE
   AND customer_id = :customer_id;
 
--- NIGDY nie konkatenuj stringów w SQL
--- ŹLE: 'SELECT * FROM table WHERE id = ' || user_input
+-- NEVER concatenate strings in SQL
+-- BAD: 'SELECT * FROM table WHERE id = ' || user_input
 ```
 
 ### Autoryzacja i uprawnienia
@@ -536,8 +536,8 @@ export async function getOrdersByCustomer(customerId: number): Promise<IOrder[]>
 
 ## Zasoby i dokumentacja
 
-- [IFS Cloud Documentation](https://docs.ifs.com/)
-- [IFS Developer Guide](https://docs.ifs.com/developer/)
+- IFS Cloud Documentation - sprawdź wewnętrzną dokumentację firmową
+- IFS Developer Guide - dostępny w portalu deweloperskim IFS
 - [Oracle PL/SQL Documentation](https://docs.oracle.com/en/database/oracle/oracle-database/)
 - [Spring Boot Reference](https://spring.io/projects/spring-boot)
 - [React Documentation](https://react.dev/)
