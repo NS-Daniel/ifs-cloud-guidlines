@@ -53,7 +53,7 @@ END Process_Order;
 - Nigdy nie przechowuj haseł w plain text
 - Używaj bind variables w SQL
 - Waliduj wszystkie dane użytkownika
-- Stosuj principe of least privilege
+- Stosuj principle of least privilege
 
 ### Testy
 - Pisz testy jednostkowe dla logiki biznesowej
