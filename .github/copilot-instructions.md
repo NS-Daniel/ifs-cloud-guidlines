@@ -495,7 +495,7 @@ export async function getOrdersByCustomer(customerId: number): Promise<IOrder[]>
 
 ## Best Practices - Podsumowanie
 
-### DO (Rób):
+### RÓB:
 - ✅ Używaj bind variables w SQL
 - ✅ Waliduj wszystkie dane wejściowe
 - ✅ Loguj ważne operacje
@@ -507,7 +507,7 @@ export async function getOrdersByCustomer(customerId: number): Promise<IOrder[]>
 - ✅ Używaj constów dla wartości magicznych
 - ✅ Kod powinien być self-documenting
 
-### DON'T (Nie rób):
+### NIE RÓB:
 - ❌ Nie konkatenuj stringów w SQL
 - ❌ Nie ignoruj wyjątków
 - ❌ Nie przechowuj haseł w plain text
