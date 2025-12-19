@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../corecode"
+		},
+		{
+			"path": "../../TechDocs"
+		},
+		{
+			"path": "../../DEV"
+		}
+	],
+	"settings": {}
+}
