@@ -6,8 +6,19 @@ To repozytorium służy do przechowywania wytycznych i instrukcji dla rozwoju IF
 
 ## Zawartość
 
+### .github/copilot-instructions.md
+Szczegółowy plik instrukcji dla GitHub Copilot i narzędzi AI. Jest to główny plik rozpoznawany przez GitHub Copilot, zawierający:
+- Architekturę IFS Cloud (trójwarstwowa: Oracle DB, Java/Spring Boot, React/TypeScript)
+- Szczegółowe standardy kodowania dla PL/SQL, Java i TypeScript
+- Przykłady kodu i wzorce projektowe
+- Konwencje nazewnictwa dla wszystkich warstw
+- Zaawansowane wytyczne bezpieczeństwa (SQL injection prevention, autoryzacja)
+- Wzorce testów jednostkowych
+- Optymalizacja i performance
+- Kompletna dokumentacja API
+
 ### copilot-instructions.md
-Plik zawierający instrukcje i wytyczne dla GitHub Copilot dotyczące rozwoju aplikacji IFS Cloud. Obejmuje:
+Plik zawierający podstawowe instrukcje i wytyczne dla GitHub Copilot dotyczące rozwoju aplikacji IFS Cloud. Obejmuje:
 - Konwencje nazewnictwa
 - Standardy kodowania
 - Best practices dla PL/SQL i API
